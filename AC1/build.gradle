@@ -1,0 +1,45 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.2.4'
+	id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'arquiteturawebAC1'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.flywaydb:flyway-core'
+	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
+	runtimeOnly 'org.postgresql:postgresql'
+	implementation 'javax.persistence:javax.persistence-api:2.2'
+	implementation 'org.hibernate:hibernate-core:6.1.7.Final'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
+	compileOnly 'org.projectlombok:lombok:1.18.30'
+	annotationProcessor 'org.projectlombok:lombok:1.18.30'
+	testCompileOnly 'org.projectlombok:lombok:1.18.30'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.hibernate.validator:hibernate-validator:7.0.1.Final'
+    implementation 'jakarta.el:jakarta.el-api:4.0.0'
+    implementation 'org.glassfish:javax.el:3.0.1-b08'
+
+
+	
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
