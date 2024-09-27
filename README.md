@@ -1,11 +1,8 @@
-# AC2WebProjeto
+# Projeto API em Java
 
-## Membros do Grupo
+## Desenvolvedor
 
-- Gabriel Sichoski Rodrigues   RA:223595
-- Albert Romano Santos Berger  RA:223764
-- Eduardo Lima Marcolino       RA:222464
-- Axel Biral Alves             RA:223655
+- Gabriel Sichoski Rodrigues
 
 ## Descrição
 
